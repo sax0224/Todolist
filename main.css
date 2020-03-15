@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    color: #fff;
+}
+
+.todo {
+    margin-top: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    background: #2980B9;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.todo h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive; 
+}
+
+.todo .addGroup {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.todo .text {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.todo .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.todo .btn:hover {
+    background: #c6c6c7;
+}
+
+.todo ul {
+    list-style: none;
+}
+
+.todo ul li {
+    background: #fff;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.todo ul li a:hover {
+    color: red;
+}
+
+
+@media (max-width:560px){
+    .todo .addGroup {
+        margin: auto;
+        flex: none;
+        display: block;
+    }
+    .todo .text,
+    .todo .btn  {
+        width: 100%;
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .todo .btn  {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:400px){
+    .todo .addGroup {
+        margin: auto;
+        flex: none;
+        display: block;
+    }
+    .todo .text,
+    .todo .btn  {
+        width: 80%;
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .todo .btn  {
+        margin-bottom: 20px;
+    }
+
+    .todo ul li {
+        width: 300px;
+    }
+
+}
+
